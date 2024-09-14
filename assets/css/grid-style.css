@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+#titulo {
+    margin: 1.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-family: "Aclonica", sans-serif;
+}
+
+#centralizar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+#gallery {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    width: 40rem; /* Ajustado para ser menor em largura */
+    height: 60rem; /* Maior altura para o efeito de retrato */
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 1.5rem;
+}
+
+#gallery>div {
+    border-radius: 0.5rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: filter 300ms;
+    aspect-ratio: 3/4; /* Proporção de retrato: mais alto que largo */
+}
+
+#gallery:has(div:hover) div:not(:hover) {
+    filter: grayscale(100%) brightness(50%);
+}
+
+#div1 {
+    background-image: url(../img/princess.jpg);
+}
+
+#div2 {
+    background-image: url(../img/goblin.jpg);
+}
+
+#div3 {
+    background-image: url(../img/magic-horse.jpg);
+}
+
+#div4 {
+    background-image: url(../img/elf.jpg);
+}
+
+#div5 {
+    background-image: url(../img/dwarf.jpg);
+}
+
+#div6 {
+    background-image: url(../img/warrior.jpg);
+}
+
+#div7 {
+    background-image: url(../img/orc.jpg);
+}
+
+#div8 {
+    background-image: url(../img/mage.jpg);
+}
+
+#div9 {
+    background-image: url(../img/dragon.jpg);
+}
